@@ -63,6 +63,26 @@ namespace Kursach.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap crossout_ICO {
+            get {
+                object obj = ResourceManager.GetObject("crossout-ICO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap crossout_ICO1 {
+            get {
+                object obj = ResourceManager.GetObject("crossout-ICO1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap download_ICO {
             get {
                 object obj = ResourceManager.GetObject("download-ICO", resourceCulture);

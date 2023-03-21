@@ -16,3 +16,4 @@ C:\Users\Ноутбук\source\repos\Kursach\obj\Debug\net6.0-windows\refint\Kur
 C:\Users\Ноутбук\source\repos\Kursach\obj\Debug\net6.0-windows\Kursach.pdb
 C:\Users\Ноутбук\source\repos\Kursach\obj\Debug\net6.0-windows\Kursach.genruntimeconfig.cache
 C:\Users\Ноутбук\source\repos\Kursach\obj\Debug\net6.0-windows\ref\Kursach.dll
+C:\Users\Ноутбук\source\repos\Kursach\obj\Debug\net6.0-windows\Kursach.Forms.FormDownload.resources

@@ -1,3 +1,5 @@
+using System.Runtime.InteropServices;
+
 namespace Kursach
 {
     public partial class Form1 : Form
@@ -6,19 +8,30 @@ namespace Kursach
         private Button currentButton;
         private Random random;
         private int tempIndex;
+        private Form activeForm;
 
         //Constructor 
         public Form1()
         {
             InitializeComponent();
             random = new Random();
+            btnCloseChildForm.Visible = false;
+            this.Text = string.Empty;   // скрывает аутлайн
+            this.ControlBox = false;    // скрывает аутлайн
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea; // не скрывает меню пуск когда фулл экран
         }
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]    //
+        private extern static void ReleaseCapture();                //      рута€ фича позвол€ет перет€гивать прогу за титле бар
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]       //
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
         //Methods
         private Color SelectThemeColor()
         {
             int index = random.Next(ThemeColor.ColorList.Count);
             while (tempIndex == index) {
-                random.Next(ThemeColor.ColorList.Count);
+               index= random.Next(ThemeColor.ColorList.Count);
             }
             tempIndex = index;
             string color = ThemeColor.ColorList[index];
@@ -37,6 +50,12 @@ namespace Kursach
                     currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
                     currentButton.Font = new System.Drawing.Font("Segoe UI", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+                    panelTitleBar.BackColor = color;
+                    panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
+                    ThemeColor.PrimaryColor = color;
+                    ThemeColor.SecondaryColor = ThemeColor.ChangeColorBrightness(color, -0.3);
+                    btnCloseChildForm.Visible = true;
+
                 }
             }
         }
@@ -53,19 +72,78 @@ namespace Kursach
             }
         }
 
+        private void OpenChildForm(Form childForm, object btnSender)
+        {
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+            ActivateButton(btnSender);
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle=FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            this.panelDesktopPanel.Controls.Add(childForm);
+            this.panelDesktopPanel.Tag  = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+            lblTitle.Text = childForm.Text;
+        }
+
         private void btnDownload_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            OpenChildForm(new Forms.FormDownload(), sender); // ньюв
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            ActivateButton(sender);  // old change in future mb :p
         }
 
         private void btnInfo_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+        }
+
+        private void btnCloseChildForm_Click(object sender, EventArgs e)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            Reset();
+        }
+        private void Reset()
+        {
+            DisableButton();
+            lblTitle.Text = "√Ћј¬Ќјя";
+            panelTitleBar.BackColor = Color.FromArgb(0, 133, 137);
+            panelLogo.BackColor = Color.FromArgb(39, 38, 60);
+            currentButton = null;
+            btnCloseChildForm.Visible = false;
+        }
+
+
+        private void panelTitleBar_MouseDown_1(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMaximize_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                this.WindowState = FormWindowState.Maximized;
+            else
+                this.WindowState = FormWindowState.Normal;
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
