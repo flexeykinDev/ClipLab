@@ -118,16 +118,73 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="edit-ICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\edit-ICO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="download-ICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\download-ICO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maximize-ICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\maximize-ICO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hint-ICO30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\Hint-ICO30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="info-squared-ICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\info-squared-ICO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="download-ICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\download-ICO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="close-ICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\close-ICO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cross-out-ICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\cross-out-ICO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minimize-ICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\minimize-ICO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Success-ICO30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\Success-ICO30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="more-info-ICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\more-info-ICO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ClipLabLogo-ICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\ClipLabLogo-ICO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit-ICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\edit-ICO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Warning-ICO30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\Warning-ICO30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-opened-folder-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\icons8-opened-folder-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Error-ICO30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Error-ICO30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hint-ICO301" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\hint-ico30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-github-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\icons8-github-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-opened-folder-501" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\icons8-opened-folder-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info-squared-ICO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\info-squared-ico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="opened-folder-ICO30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\opened-folder-ico30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ffmpeg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ffmpeg\ffmpeg.exe;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="IconApp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\IconApp.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconApp-16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\IconApp-16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconApp-32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\IconApp-32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
