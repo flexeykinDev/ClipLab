@@ -160,7 +160,11 @@ namespace Kursach.Forms
                 {
                     // Путь к FFmpeg
                     string ffmpegPath = Path.Combine(Application.StartupPath, "ffmpeg.exe");
-                    
+
+
+
+
+
 
                     // Путь к первому видеофайлу
                     string input1 = @$"{inputFile1}";
@@ -323,6 +327,9 @@ namespace Kursach.Forms
             {
                 // Путь к FFmpeg
                 string ffmpegPath = Path.Combine(Application.StartupPath, "ffmpeg.exe");
+
+
+
                 // Получаем начальное и конечное время обрезки из TextBox
                 string start = txtStartTime.Text;
                 string end = txtEndTime.Text;

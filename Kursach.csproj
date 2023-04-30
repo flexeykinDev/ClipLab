@@ -22,6 +22,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="FFmpeg\ffmpeg.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="Icons\IconApp.ico" />
   </ItemGroup>
 
@@ -29,6 +33,12 @@
     <PackageReference Include="NReco.VideoConverter" Version="1.2.1" />
     <PackageReference Include="VideoLibrary" Version="3.2.3" />
     <PackageReference Include="xFFmpeg.NET" Version="7.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="FFmpeg\ffmpeg.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
