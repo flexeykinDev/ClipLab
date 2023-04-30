@@ -14,7 +14,7 @@ namespace Kursach.Forms
 {
     public partial class FormInfo : Form
     {
-        private DateTime startTime;
+        
         public FormInfo()
         {
             InitializeComponent();

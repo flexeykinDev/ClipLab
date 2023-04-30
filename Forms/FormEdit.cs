@@ -20,11 +20,11 @@ namespace Kursach.Forms
     public partial class FormEdit : Form
     {
 
-        private string inputFile1;
-        private string inputFile2;
-        private string outputFile;
-        private string inputFileTab3;
-        private string outputFileTab3;
+        private string? inputFile1;
+        private string? inputFile2;
+        private string? outputFile;
+        private string? inputFileTab3;
+        private string? outputFileTab3;
 
         void AlertBox(Color backColor, Color color, string title, string text, Image icon)
         {
@@ -39,7 +39,7 @@ namespace Kursach.Forms
 
 
         }
-        string videoName, videoPath, musicPath, musicName;
+        string? videoName, videoPath, musicPath, musicName;
 
         public FormEdit()
         {
