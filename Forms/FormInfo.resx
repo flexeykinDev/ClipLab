@@ -58,18 +58,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label1.Text" xml:space="preserve">
-    <value>Тут собраны краткие подсказки о программе.
-По сути если вы что то сделаете не так то уведомление в правом нижнем углу, попытается уведомить вас об этом!
-Если не скачивается видео(ошибка 403), то попробуйте перезапустить программу
+    <value>Тут зібрані короткі підказки про програму.
+По суті, якщо ви щось зробите не так, то повідомлення в правому нижньому кутку спробує повідомити вас про це!
+Якщо не завантажується відео (помилка 403), то спробуйте перезапустити програму
 
-На вкладке редактирование, вписывайте значения Клипа допустимое длительности видео.
+На вкладці редагування, вписуйте значення Кліпа допустимої тривалості відео.
 </value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnGithub.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAABC5JREFUaEPt2UeoHVUcx/GnUTQGNSoxdsUWDWIWFixZKELEhm6iqOBGkdgSEeNW
+        DQAACw0B7QfALAAABC5JREFUaEPt2UeoHVUcx/GnUTQGNSoxdsUWDWIWFixZKELEhm6iqOBGkdgSEeNW
         cSE2LCgILsWFO0tILIlLRRIXKsauiC2CBbvG/v3CHBjP/OfeOe/N3Eh4P/jwHndmzpk7c+aUuVOz2Y6z
         Fy7CPViLd/Attlb8/224zX0uxHz8L7ILLsfz+BP/FPKYZ3EZLGvimYub8DmiE5yOz3AjdsVEcg4+QHQy
         fXgfZ2OweOsfRFT5EB6Dd77XLMSriCoc0kbsi15yGLzdUUWT8B48hxllAexGowomyWdyP0wr9h7bojm1

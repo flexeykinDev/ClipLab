@@ -1,7 +1,7 @@
 using System.Diagnostics.Contracts;
 using System.Runtime.InteropServices;
 
-namespace Kursach
+namespace ClipLab
 {
     public partial class Form1 : Form
     {
@@ -130,7 +130,7 @@ namespace Kursach
         private void Reset()
         {
             DisableButton();
-            lblTitle.Text = "√À¿¬Õ¿ﬂ";
+            lblTitle.Text = "√ŒÀŒ¬Õ¿";
             panelTitleBar.BackColor = Color.FromArgb(0, 133, 137);
             panelLogo.BackColor = Color.FromArgb(39, 38, 60);
             currentButton = null;

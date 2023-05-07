@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Kursach.Notifications
+namespace ClipLab.Notifications
 {
     public partial class AlertBox : Form
     {

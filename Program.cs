@@ -1,4 +1,4 @@
-namespace Kursach
+namespace ClipLab
 {
     internal static class Program
     {

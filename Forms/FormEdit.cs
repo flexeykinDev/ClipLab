@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +12,10 @@ using System.Windows.Forms;
 using FFmpeg.NET;
 using Microsoft.VisualBasic.ApplicationServices;
 using NReco.VideoConverter;
-using Kursach.Notifications;
+using ClipLab.Notifications;
 
 
-namespace Kursach.Forms
+namespace ClipLab.Forms
 {
     public partial class FormEdit : Form
     {
@@ -104,7 +104,7 @@ namespace Kursach.Forms
         /// tab1
         private void btnBrowseInput1_Click(object sender, EventArgs e)
         {
-            // Открыть диалог выбора файла для первого видеофайла
+            // Відкрити діалог вибору файлу для першого відеофайлу
             var openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Video Files (*.mp4;*.avi)|*.mp4;*.avi|All files (*.*)|*.*";
             if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -116,7 +116,7 @@ namespace Kursach.Forms
 
         private void btnBrowseInput2_Click(object sender, EventArgs e)
         {
-            // Открыть диалог выбора файла для второго видеофайла
+            // Відкрити діалог вибору файлу для другого відеофайлу
             var openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Video Files (*.mp4;*.avi)|*.mp4;*.avi|All files (*.*)|*.*";
             if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -130,7 +130,7 @@ namespace Kursach.Forms
 
         private void btnBrowseOutput_Click(object sender, EventArgs e)
         {
-            // Открыть диалог выбора файла для результирующего видеофайла
+            // Відкрити діалог вибору файлу для результуючого відеофайлу
             using (var folderBrowserDialog = new FolderBrowserDialog())
             {
                 if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
@@ -149,16 +149,16 @@ namespace Kursach.Forms
                 if (string.IsNullOrWhiteSpace(inputFile1) || string.IsNullOrWhiteSpace(inputFile2) || string.IsNullOrWhiteSpace(outputFile))
                 {
                     System.Media.SystemSounds.Asterisk.Play();
-                    AlertBox(Color.LightPink, Color.DarkRed, "Ошибка :(", "Заполните все поля!", Properties.Resources.Error_ICO30);
+                    AlertBox(Color.LightPink, Color.DarkRed, "Помилка :(", "Заповніть усі поля!", Properties.Resources.Error_ICO30);
                 }
                 else if (!File.Exists(inputFile1) || !File.Exists(inputFile2))
                 {
                     System.Media.SystemSounds.Asterisk.Play();
-                    AlertBox(Color.LightPink, Color.DarkRed, "Ошибка :(", "Выберите существующие видеофайлы!", Properties.Resources.Error_ICO30);
+                    AlertBox(Color.LightPink, Color.DarkRed, "Помилка :(", "Виберіть існуючі відеофайли!", Properties.Resources.Error_ICO30);
                 }
                 else
                 {
-                    // Путь к FFmpeg
+                    // Шлях до FFmpeg
                     string ffmpegPath = Path.Combine(Application.StartupPath, "ffmpeg.exe");
 
 
@@ -166,23 +166,23 @@ namespace Kursach.Forms
 
 
 
-                    // Путь к первому видеофайлу
+                    // Шлях до першого відеофайлу
                     string input1 = @$"{inputFile1}";
 
-                    // Путь ко второму видеофайлу
+                    // Шлях до другого відеофайлу
                     string input2 = @$"{inputFile2}";
 
 
-                    // Путь к файлу списка входных файлов
-                    // Создаем временный файл списка входных файлов
+                    // Шлях до файлу списку вхідних файлів
+                    // Створюємо тимчасовий файл списку вхідних файлів
                     string listFile = Path.GetTempFileName();
                     string listContent = $"file '{input1}'\r\nfile '{input2}'";
                     File.WriteAllText(listFile, listContent);
 
-                    // Путь к выходному файлу
+                    // Шлях до вихідного файлу
                     string output = @$"{outputFile}";
 
-                    // Создаем процесс для выполнения команды FFmpeg
+                    // Створюємо процес для виконання команди FFmpeg
                     var processStartInfo = new ProcessStartInfo();
                     processStartInfo.FileName = ffmpegPath;
                     processStartInfo.Arguments = $"-safe 0 -f concat -i \"{listFile}\" -c copy \"{output}\"";
@@ -192,7 +192,7 @@ namespace Kursach.Forms
                     if (File.Exists(output))
                     {
                         System.Media.SystemSounds.Asterisk.Play();
-                        AlertBox(Color.LightGoldenrodYellow, Color.Gold, "Предупреждение :O", "Файл уже существует.", Properties.Resources.Warning_ICO30);
+                        AlertBox(Color.LightGoldenrodYellow, Color.Gold, "Попередження :O", "Файл вже існує.", Properties.Resources.Warning_ICO30);
                     }
                     else if (!File.Exists(output))
                     {
@@ -209,7 +209,7 @@ namespace Kursach.Forms
                         File.Delete(listFile);
 
                         System.Media.SystemSounds.Asterisk.Play();
-                        AlertBox(Color.LightGray, Color.SeaGreen, "Успех :)", "Операция выполнена Успешно", Properties.Resources.Success_ICO30);
+                        AlertBox(Color.LightGray, Color.SeaGreen, "Успіх :)", "Операція виконана Успішно", Properties.Resources.Success_ICO30);
 
                     }
                 }
@@ -219,7 +219,7 @@ namespace Kursach.Forms
             catch (Exception ex)
             {
                 System.Media.SystemSounds.Asterisk.Play();
-                AlertBox(Color.LightPink, Color.DarkRed, "Ошибка :(", $"Произошла ошибка при слияния видео: {ex.Message}", Properties.Resources.Error_ICO30);
+                AlertBox(Color.LightPink, Color.DarkRed, "Помилка :(", $"Сталася помилка під час злиття відео: {ex.Message}", Properties.Resources.Error_ICO30);
             }
 
 
@@ -259,20 +259,20 @@ namespace Kursach.Forms
             if (string.IsNullOrWhiteSpace(txtOpenVideo.Text) || string.IsNullOrWhiteSpace(txtSaveVideo.Text))
             {
                 System.Media.SystemSounds.Asterisk.Play();
-                AlertBox(Color.LightPink, Color.DarkRed, "Ошибка :(", "Пути к файлам не указаны!", Properties.Resources.Error_ICO30);
+                AlertBox(Color.LightPink, Color.DarkRed, "Помилка :(", "Шляхи до файлів не вказані!", Properties.Resources.Error_ICO30);
                 return;
             }
             else if (File.Exists(musicPath))
             {
                 System.Media.SystemSounds.Asterisk.Play();
-                AlertBox(Color.LightGoldenrodYellow, Color.Gold, "Предупреждение :O", "Файл уже существует.", Properties.Resources.Warning_ICO30);
+                AlertBox(Color.LightGoldenrodYellow, Color.Gold, "Попередження :O", "Файл вже існує.", Properties.Resources.Warning_ICO30);
             }
             else
             {
                 var convert = new NReco.VideoConverter.FFMpegConverter();
                 convert.ConvertMedia(txtOpenVideo.Text.Trim(), txtSaveVideo.Text.Trim(), "mp3");
                 System.Media.SystemSounds.Asterisk.Play();
-                AlertBox(Color.LightGray, Color.SeaGreen, "Успех :)", "Операция выполнена Успешно", Properties.Resources.Success_ICO30);
+                AlertBox(Color.LightGray, Color.SeaGreen, "Успіх :)", "Операція виконана Успішно", Properties.Resources.Success_ICO30);
             }
             
         
@@ -311,29 +311,29 @@ namespace Kursach.Forms
             if (string.IsNullOrWhiteSpace(inputFileTab3) || string.IsNullOrWhiteSpace(outputFileTab3))
             {
                 System.Media.SystemSounds.Asterisk.Play();
-                AlertBox(Color.LightPink, Color.DarkRed, "Ошибка :(", "Заполните все поля!", Properties.Resources.Error_ICO30);
+                AlertBox(Color.LightPink, Color.DarkRed, "Помилка :(", "Заповніть усі поля!", Properties.Resources.Error_ICO30);
             }
             else if (!File.Exists(inputFileTab3))
             {
                 System.Media.SystemSounds.Asterisk.Play();
-                AlertBox(Color.LightPink, Color.DarkRed, "Ошибка :(", "Выберите существующие видеофайлы!", Properties.Resources.Error_ICO30);
+                AlertBox(Color.LightPink, Color.DarkRed, "Помилка :(", "Виберіть існуючі відеофайли!", Properties.Resources.Error_ICO30);
             }
             else if (File.Exists(outputFileTab3))
             {
                 System.Media.SystemSounds.Asterisk.Play();
-                AlertBox(Color.LightGoldenrodYellow, Color.Gold, "Предупреждение :O", "Файл уже существует.", Properties.Resources.Warning_ICO30);
+                AlertBox(Color.LightGoldenrodYellow, Color.Gold, "Попередження :O", "Файл вже існує.", Properties.Resources.Warning_ICO30);
             }
             else
             {
-                // Путь к FFmpeg
+                // Шлях до FFmpeg
                 string ffmpegPath = Path.Combine(Application.StartupPath, "ffmpeg.exe");
 
 
 
-                // Получаем начальное и конечное время обрезки из TextBox
+                // Отримуємо початковий і кінцевий час обрізки з TextBox
                 string start = txtStartTime.Text;
                 string end = txtEndTime.Text;
-                // Проверяем, являются ли start и end числами
+                // Перевіряємо, чи є start і end числами
                 double startNum, endNum;
                 bool isStartNum = double.TryParse(start, out startNum);
                 bool isEndNum = double.TryParse(end, out endNum);
@@ -346,14 +346,14 @@ namespace Kursach.Forms
                 }
                 else
                 {
-                    // Получаем пути к входному и выходному файлу
+                    // Отримуємо шляхи до вхідного і вихідного файлу
                     string inputFile = @$"{inputFileTab3}";
                     string outputFile = @$"{outputFileTab3}";
 
-                    // Формируем аргументы команды FFmpeg для обрезки видео
+                    // Формуємо аргументи команди FFmpeg для обрізки відео
                     string arguments = $"-i \"{inputFile}\" -ss {startNum} -to {endNum} -c copy \"{outputFile}\"";
 
-                    // Создаем процесс для выполнения команды FFmpeg
+                    // Створюємо процес для виконання команди FFmpeg
                     ProcessStartInfo startInfo = new ProcessStartInfo();
                     startInfo.FileName = ffmpegPath;
                     startInfo.Arguments = arguments;
@@ -365,12 +365,12 @@ namespace Kursach.Forms
                     process.StartInfo = startInfo;
                     process.Start();
 
-                    // Ожидаем завершения процесса
+                    // Очікуємо завершення процесу
                     process.WaitForExit();
 
-                    // Отображаем сообщение об успешной обрезке видео
+                    // Відображаємо повідомлення про успішну обрізку відео
                     System.Media.SystemSounds.Asterisk.Play();
-                    AlertBox(Color.LightGray, Color.SeaGreen, "Успех :)", "Операция выполнена Успешно", Properties.Resources.Success_ICO30);
+                    AlertBox(Color.LightGray, Color.SeaGreen, "Успіх :)", "Операція виконана Успішно!", Properties.Resources.Success_ICO30);
                 }
 
 

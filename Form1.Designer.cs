@@ -1,4 +1,4 @@
-﻿namespace Kursach
+﻿namespace ClipLab
 {
     partial class Form1
     {
@@ -71,14 +71,14 @@
             this.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInfo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnInfo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnInfo.Image = global::Kursach.Properties.Resources.more_info_ICO;
+            this.btnInfo.Image = global::ClipLab.Properties.Resources.more_info_ICO;
             this.btnInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInfo.Location = new System.Drawing.Point(0, 200);
             this.btnInfo.Name = "btnInfo";
             this.btnInfo.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnInfo.Size = new System.Drawing.Size(220, 60);
             this.btnInfo.TabIndex = 3;
-            this.btnInfo.Text = "            Инфо";
+            this.btnInfo.Text = "            Інфо";
             this.btnInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInfo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnInfo.UseVisualStyleBackColor = true;
@@ -91,14 +91,14 @@
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEdit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnEdit.Image = global::Kursach.Properties.Resources.edit_ICO;
+            this.btnEdit.Image = global::ClipLab.Properties.Resources.edit_ICO;
             this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEdit.Location = new System.Drawing.Point(0, 140);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnEdit.Size = new System.Drawing.Size(220, 60);
             this.btnEdit.TabIndex = 2;
-            this.btnEdit.Text = "       Редактировать";
+            this.btnEdit.Text = "         Редагувати";
             this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEdit.UseVisualStyleBackColor = true;
@@ -111,14 +111,14 @@
             this.btnDownload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDownload.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDownload.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnDownload.Image = global::Kursach.Properties.Resources.download_ICO;
+            this.btnDownload.Image = global::ClipLab.Properties.Resources.download_ICO;
             this.btnDownload.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDownload.Location = new System.Drawing.Point(0, 80);
             this.btnDownload.Name = "btnDownload";
             this.btnDownload.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnDownload.Size = new System.Drawing.Size(220, 60);
             this.btnDownload.TabIndex = 1;
-            this.btnDownload.Text = "           Скачать";
+            this.btnDownload.Text = "         Завантажити";
             this.btnDownload.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDownload.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDownload.UseVisualStyleBackColor = true;
@@ -167,7 +167,7 @@
             this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimize.FlatAppearance.BorderSize = 0;
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimize.Image = global::Kursach.Properties.Resources.minimize_ICO;
+            this.btnMinimize.Image = global::ClipLab.Properties.Resources.minimize_ICO;
             this.btnMinimize.Location = new System.Drawing.Point(766, 6);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Padding = new System.Windows.Forms.Padding(2);
@@ -181,7 +181,7 @@
             this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximize.FlatAppearance.BorderSize = 0;
             this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaximize.Image = global::Kursach.Properties.Resources.maximize_ICO;
+            this.btnMaximize.Image = global::ClipLab.Properties.Resources.maximize_ICO;
             this.btnMaximize.Location = new System.Drawing.Point(799, 6);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Padding = new System.Windows.Forms.Padding(2);
@@ -197,7 +197,7 @@
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Image = global::Kursach.Properties.Resources.close_ICO;
+            this.btnClose.Image = global::ClipLab.Properties.Resources.close_ICO;
             this.btnClose.Location = new System.Drawing.Point(832, 6);
             this.btnClose.Name = "btnClose";
             this.btnClose.Padding = new System.Windows.Forms.Padding(2);
@@ -211,7 +211,7 @@
             this.btnCloseChildForm.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnCloseChildForm.FlatAppearance.BorderSize = 0;
             this.btnCloseChildForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCloseChildForm.Image = global::Kursach.Properties.Resources.cross_out_ICO;
+            this.btnCloseChildForm.Image = global::ClipLab.Properties.Resources.cross_out_ICO;
             this.btnCloseChildForm.Location = new System.Drawing.Point(0, 0);
             this.btnCloseChildForm.Name = "btnCloseChildForm";
             this.btnCloseChildForm.Size = new System.Drawing.Size(75, 80);
@@ -227,9 +227,9 @@
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(365, 28);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(111, 26);
+            this.lblTitle.Size = new System.Drawing.Size(114, 26);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "ГЛАВНАЯ";
+            this.lblTitle.Text = "ГОЛОВНА";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelDesktopPanel
@@ -251,15 +251,15 @@
             this.lblHint.ForeColor = System.Drawing.Color.White;
             this.lblHint.Location = new System.Drawing.Point(254, 320);
             this.lblHint.Name = "lblHint";
-            this.lblHint.Size = new System.Drawing.Size(372, 25);
+            this.lblHint.Size = new System.Drawing.Size(366, 25);
             this.lblHint.TabIndex = 1;
-            this.lblHint.Text = "Подсказка: Выберите пункт в меню слева";
+            this.lblHint.Text = "Підказка: Виберіть пункт у меню ліворуч";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(137)))));
-            this.pictureBox1.Image = global::Kursach.Properties.Resources.ClipLabLogo_ICO;
+            this.pictureBox1.Image = global::ClipLab.Properties.Resources.ClipLabLogo_ICO;
             this.pictureBox1.Location = new System.Drawing.Point(195, 120);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(471, 188);

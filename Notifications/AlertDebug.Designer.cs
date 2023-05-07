@@ -1,4 +1,4 @@
-﻿namespace Kursach.Notifications
+﻿namespace ClipLab.Notifications
 {
     partial class AlertDebug
     {

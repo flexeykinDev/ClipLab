@@ -1,4 +1,4 @@
-﻿namespace Kursach.Forms
+﻿namespace ClipLab.Forms
 {
     partial class FormDownload
     {
@@ -61,7 +61,7 @@
             this.btnDownload.Name = "btnDownload";
             this.btnDownload.Size = new System.Drawing.Size(303, 68);
             this.btnDownload.TabIndex = 1;
-            this.btnDownload.Text = "Скачать";
+            this.btnDownload.Text = "Завантажити";
             this.btnDownload.UseVisualStyleBackColor = true;
             this.btnDownload.Click += new System.EventHandler(this.btnDownload_Click);
             // 
@@ -76,9 +76,9 @@
             this.chkAudioOnly.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.chkAudioOnly.Location = new System.Drawing.Point(422, 161);
             this.chkAudioOnly.Name = "chkAudioOnly";
-            this.chkAudioOnly.Size = new System.Drawing.Size(105, 23);
+            this.chkAudioOnly.Size = new System.Drawing.Size(96, 23);
             this.chkAudioOnly.TabIndex = 2;
-            this.chkAudioOnly.Text = "Только MP3";
+            this.chkAudioOnly.Text = "Лише MP3";
             this.chkAudioOnly.UseVisualStyleBackColor = true;
             // 
             // cboQuality
@@ -111,9 +111,9 @@
             this.lbl1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl1.Location = new System.Drawing.Point(215, 86);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(130, 21);
+            this.lbl1.Size = new System.Drawing.Size(151, 21);
             this.lbl1.TabIndex = 5;
-            this.lbl1.Text = "Ссылка на видео";
+            this.lbl1.Text = "Посилання на відео";
             // 
             // lbl2
             // 
@@ -122,9 +122,9 @@
             this.lbl2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl2.Location = new System.Drawing.Point(212, 137);
             this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(78, 21);
+            this.lbl2.Size = new System.Drawing.Size(56, 21);
             this.lbl2.TabIndex = 6;
-            this.lbl2.Text = "Качество:";
+            this.lbl2.Text = "Якість:";
             this.lbl2.Visible = false;
             // 
             // txtSavePath
@@ -155,9 +155,9 @@
             this.lblSaveAs.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblSaveAs.Location = new System.Drawing.Point(212, 187);
             this.lblSaveAs.Name = "lblSaveAs";
-            this.lblSaveAs.Size = new System.Drawing.Size(134, 21);
+            this.lblSaveAs.Size = new System.Drawing.Size(142, 21);
             this.lblSaveAs.TabIndex = 9;
-            this.lblSaveAs.Text = "Путь сохранения:";
+            this.lblSaveAs.Text = "Шлях збереження:";
             // 
             // FormDownload
             // 
@@ -175,7 +175,7 @@
             this.Controls.Add(this.btnDownload);
             this.Controls.Add(this.txtUrl);
             this.Name = "FormDownload";
-            this.Text = "СКАЧАТЬ";
+            this.Text = "СКАЧАТИ";
             this.Load += new System.EventHandler(this.FormDownload_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

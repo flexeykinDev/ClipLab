@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kursach
+namespace ClipLab
 {
     
     public static class ThemeColor

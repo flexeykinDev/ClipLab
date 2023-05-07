@@ -1,4 +1,4 @@
-﻿namespace Kursach.Forms
+﻿namespace ClipLab.Forms
 {
     partial class FormInfo
     {
@@ -34,6 +34,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnGithub = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -44,17 +45,17 @@
             this.lblTitle.Location = new System.Drawing.Point(233, 30);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(333, 30);
+            this.lblTitle.Size = new System.Drawing.Size(322, 30);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Как пользоваться программой?";
+            this.lblTitle.Text = "Як користуватися програмою?";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label1
             // 
             this.label1.AllowDrop = true;
-            this.label1.Location = new System.Drawing.Point(25, 78);
+            this.label1.Location = new System.Drawing.Point(25, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(933, 223);
+            this.label1.Size = new System.Drawing.Size(861, 223);
             this.label1.TabIndex = 1;
             this.label1.Text = resources.GetString("label1.Text");
             // 
@@ -63,7 +64,7 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(992, 430);
+            this.label3.Location = new System.Drawing.Point(1011, 430);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 52);
             this.label3.TabIndex = 4;
@@ -72,11 +73,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 301);
+            this.label2.Location = new System.Drawing.Point(25, 272);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(855, 30);
+            this.label2.Size = new System.Drawing.Size(861, 30);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Принцип везде почти одинаковый, выбираете пути, нажимаете огромную кнопку\r\n";
+            this.label2.Text = "Принцип скрізь майже однаковий, вибираєте шляхи, натискаєте величезну кнопку\n";
             // 
             // btnGithub
             // 
@@ -85,15 +86,27 @@
             this.btnGithub.Image = ((System.Drawing.Image)(resources.GetObject("btnGithub.Image")));
             this.btnGithub.Location = new System.Drawing.Point(0, 485);
             this.btnGithub.Name = "btnGithub";
-            this.btnGithub.Size = new System.Drawing.Size(1041, 52);
+            this.btnGithub.Size = new System.Drawing.Size(1060, 52);
             this.btnGithub.TabIndex = 6;
             this.btnGithub.UseVisualStyleBackColor = true;
             this.btnGithub.Click += new System.EventHandler(this.btnGithub_Click);
             // 
+            // label4
+            // 
+            this.label4.AllowDrop = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label4.Location = new System.Drawing.Point(25, 342);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(844, 72);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Відео понад 10 хвилин завантажуються довго, потрібно почекати, не виходячи з прог" +
+    "рами, після скачування ви отримаєте повідомлення про успішне скачування";
+            // 
             // FormInfo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1041, 537);
+            this.ClientSize = new System.Drawing.Size(1060, 537);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnGithub);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
@@ -102,7 +115,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "FormInfo";
-            this.Text = "ИНФОРМАЦИЯ";
+            this.Text = "ІНФОРМАЦІЯ";
             this.Load += new System.EventHandler(this.FormInfo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -116,5 +129,6 @@
         private Label label3;
         private Label label2;
         private Button btnGithub;
+        private Label label4;
     }
 }

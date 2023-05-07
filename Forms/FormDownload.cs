@@ -1,4 +1,4 @@
-﻿using Kursach.Notifications;
+﻿using ClipLab.Notifications;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,7 +19,7 @@ using System.Diagnostics;
 using System.Net.Http.Headers;
 using System.Reflection.Emit;
 
-namespace Kursach.Forms
+namespace ClipLab.Forms
 {
     public partial class FormDownload : Form
     {
@@ -60,7 +60,7 @@ namespace Kursach.Forms
             aRt.TextAlertBox = text;
             aRt.IconeAlertBox = icon;
             aRt.ShowDialog();
-            aRt.TopMost = false;
+            aRt.TopMost = true;
 
 
         }
@@ -88,27 +88,22 @@ namespace Kursach.Forms
             
             try
             {
-                // Получаем URL видео из текстового поля
+                // Отримуємо URL відео з текстового поля
                 string videoUrl = txtUrl.Text;
                 if (string.IsNullOrWhiteSpace(videoUrl))
                 {
                     System.Media.SystemSounds.Asterisk.Play();
-                    AlertBox(Color.LightPink, Color.DarkRed, "Ошибка :(", "Вставьте ссылку на видео!", Properties.Resources.Error_ICO30);
+                    AlertBox(Color.LightPink, Color.DarkRed, "Помилка :(", "Вставте посилання на відео!", Properties.Resources.Error_ICO30);
                 }
                 Regex regex = new Regex(@"^(https?\:\/\/)?(www\.youtube\.com|youtu\.?be)\/.+$");
                 if (regex.IsMatch(videoUrl))
                 {
-                    // Создаем объект для работы с YouTube
+                    // Створюємо об'єкт для роботи з YouTube
                     var youTube = YouTube.Default;
 
-                    // Получаем информацию о видео
+                    // Отримуємо інформацію про відео
                     var video = youTube.GetVideo(videoUrl);
-                    // Получаем название видео
-
-
-
-
-
+                    // Отримуємо назву відео
 
                     string videoTitle = video.Title;
 
@@ -119,59 +114,60 @@ namespace Kursach.Forms
                     if (string.IsNullOrWhiteSpace(txtSavePath.Text))
                     {
                         System.Media.SystemSounds.Asterisk.Play();
-                        AlertBox(Color.LightPink, Color.DarkRed, "Ошибка :(", "Укажите путь сохранения!", Properties.Resources.Error_ICO30);
+                        AlertBox(Color.LightPink, Color.DarkRed, "Помилка :(", "Вкажіть шлях збереження!", Properties.Resources.Error_ICO30);
                     }
                     if (!string.IsNullOrWhiteSpace(txtSavePath.Text))
                     {
-                        // Получаем путь для сохранения видео
+                        // Отримуємо шлях для збереження відео
                         string savePath = txtSavePath.Text;
 
-                        // Добавляем название файла к пути
+                        // Додаємо назву файлу до шляху
 
                         if (!savePath.EndsWith("\\"))
                         {
                             savePath += "\\";
                         }
                         savePath += fullName;
-                        // Запускаем операцию загрузки видео в отдельном потоке
 
-                        
+
+                        // Запускаємо операцію завантаження відео в окремому потоці
+
                             await Task.Run(() =>
                             {
-                                AlertBox(Color.LightBlue, Color.DodgerBlue, "Ожидайте ( ͡° ͜ʖ ͡°)", "скачивания файла", Properties.Resources.Hint_ICO30);
+                                AlertBox(Color.LightBlue, Color.DodgerBlue, "Очікуйте ( ͡° ͜ʖ ͡°)", "завантаження файлу", Properties.Resources.Hint_ICO30);
 
-                                // Получаем данные видео в виде массива байт
+                                // Отримуємо дані відео у вигляді масиву байт
                                 byte[] videoData = video.GetBytes();
 
 
-                                // Сохраняем видео на диск
+                                // Зберігаємо відео на диск
                                 if (File.Exists(savePath))
                                 {
 
                                     System.Media.SystemSounds.Asterisk.Play();
-                                    AlertBox(Color.LightGoldenrodYellow, Color.Gold, "Предупреждение :O", "Файл уже существует.", Properties.Resources.Warning_ICO30);
+                                    AlertBox(Color.LightGoldenrodYellow, Color.Gold, "Попередження :O", "Файл вже існує.", Properties.Resources.Warning_ICO30);
                                 }
                                 else
                                 {
-                                    // File.WriteAllBytes(savePath, videoData);
+                                    
                                     bool convertToMp3 = chkAudioOnly.Checked;
 
                                     if (convertToMp3)
                                     {
-                                        // Создаем объект для конвертации видео
+                                        // Створюємо об'єкт для конвертації відео
                                         var ffMpeg = new NReco.VideoConverter.FFMpegConverter();
 
                                         var conv = new FFMpegConverter();
-                                        // Сохраняем видео на диск
+                                        // Зберігаємо відео на диск
                                         File.WriteAllBytes(savePath, videoData);
                                         Thread.Sleep(500);
                                         if (File.Exists(savePath))
                                         {
-                                            // Путь к исходному файлу
+                                            // Шлях до вихідного файлу
                                             var sourcePath = savePath;
-                                            //var outputPath = savePath + ".mp3";
+                                            
                                             var outputPath = Path.Combine(Path.GetDirectoryName(savePath), Path.GetFileNameWithoutExtension(savePath)) + ".mp3";
-                                            // Конвертируем видео в MP3
+                                            // Конвертуємо відео у MP3
                                             ffMpeg.ConvertMedia(sourcePath.Trim(), outputPath.Trim(), "mp3");
                                             if (File.Exists(outputPath))
                                             {
@@ -183,13 +179,13 @@ namespace Kursach.Forms
                                     }
                                     else
                                     {
-                                        // Сохраняем видео на диск
+                                        // Зберігаємо відео на диск
                                         File.WriteAllBytes(savePath, videoData);
                                     }
 
 
                                     System.Media.SystemSounds.Asterisk.Play();
-                                    AlertBox(Color.LightGray, Color.SeaGreen, "Успех :)", "Видео успешно скачано!", Properties.Resources.Success_ICO30);
+                                    AlertBox(Color.LightGray, Color.SeaGreen, "Успіх :)", "Відео успішно завантажено!", Properties.Resources.Success_ICO30);
                                 }
                             
                             });
@@ -200,25 +196,25 @@ namespace Kursach.Forms
                 {
                     
                     System.Media.SystemSounds.Asterisk.Play();
-                    AlertBox(Color.LightPink, Color.DarkRed, "Ошибка :(", "Ссылка не верна.", Properties.Resources.Error_ICO30);
+                    AlertBox(Color.LightPink, Color.DarkRed, "Помилка :(", "Посилання не вірне.", Properties.Resources.Error_ICO30);
                 }
             }
-            catch(System.ComponentModel.Win32Exception ex)
+            catch(Exception ex)
             {
-                if (ex.Message.Contains("403")) // Если сообщение об ошибке содержит "403"
+                if (ex.Message.Contains("403")) // Якщо повідомлення про помилку містить "403"
                 {
                     
                     System.Media.SystemSounds.Asterisk.Play();
-                    AlertBox(Color.LightBlue, Color.DodgerBlue, "Ошибка доступа", "перезапустите приложение!", Properties.Resources.Hint_ICO30);
-                    AlertBox(Color.LightBlue, Color.DodgerBlue, "Ошибка доступа", "недостаточно прав для открытия этой ссылки",  Properties.Resources.Hint_ICO30);
+                    AlertBox(Color.LightBlue, Color.DodgerBlue, "Помилка доступу", "Спробуйте ще раз!", Properties.Resources.Hint_ICO30);
+                    AlertBox(Color.LightBlue, Color.DodgerBlue, "Помилка доступу", "якщо не допомогло, перезапустіть програму!",  Properties.Resources.Hint_ICO30);
 
                 }
-                else // Если другая ошибка
+                else // Якщо інша помилка
                 {
 
                     System.Media.SystemSounds.Asterisk.Play();
                     
-                    AlertBox(Color.LightPink, Color.DarkRed, "Ошибка :(", "Ошибка", Properties.Resources.Error_ICO30);
+                    AlertBox(Color.LightPink, Color.DarkRed, "Помилка :(", "Невідома Помилка!", Properties.Resources.Error_ICO30);
                     
                 }
             }

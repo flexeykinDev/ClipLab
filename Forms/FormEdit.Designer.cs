@@ -1,4 +1,4 @@
-﻿namespace Kursach.Forms
+﻿namespace ClipLab.Forms
 {
     partial class FormEdit
     {
@@ -98,7 +98,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(792, 422);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Объединение";
+            this.tabPage1.Text = "Об\'єднання";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // lbl3
@@ -108,9 +108,9 @@
             this.lbl3.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl3.Location = new System.Drawing.Point(72, 192);
             this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(352, 25);
+            this.lbl3.Size = new System.Drawing.Size(323, 25);
             this.lbl3.TabIndex = 35;
-            this.lbl3.Text = "Путь сохранения объединённых видео";
+            this.lbl3.Text = "Шлях збереження об\'єднаних відео";
             // 
             // lbl2
             // 
@@ -119,15 +119,15 @@
             this.lbl2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl2.Location = new System.Drawing.Point(72, 109);
             this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(84, 25);
+            this.lbl2.Size = new System.Drawing.Size(78, 25);
             this.lbl2.TabIndex = 34;
-            this.lbl2.Text = "2 Видео:";
+            this.lbl2.Text = "2 Відео:";
             // 
             // btnBrowseOutput
             // 
             this.btnBrowseOutput.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnBrowseOutput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBrowseOutput.Image = global::Kursach.Properties.Resources.icons8_opened_folder_50;
+            this.btnBrowseOutput.Image = global::ClipLab.Properties.Resources.icons8_opened_folder_50;
             this.btnBrowseOutput.Location = new System.Drawing.Point(505, 205);
             this.btnBrowseOutput.Name = "btnBrowseOutput";
             this.btnBrowseOutput.Size = new System.Drawing.Size(83, 49);
@@ -151,9 +151,9 @@
             this.lbl1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl1.Location = new System.Drawing.Point(72, 36);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(84, 25);
+            this.lbl1.Size = new System.Drawing.Size(78, 25);
             this.lbl1.TabIndex = 26;
-            this.lbl1.Text = "1 Видео:";
+            this.lbl1.Text = "1 Відео:";
             // 
             // txtBoxOutput
             // 
@@ -182,7 +182,7 @@
             this.btnConcatenate.Name = "btnConcatenate";
             this.btnConcatenate.Size = new System.Drawing.Size(271, 94);
             this.btnConcatenate.TabIndex = 31;
-            this.btnConcatenate.Text = "ОБЪЕДИНИТЬ";
+            this.btnConcatenate.Text = "ОБ\'ЄДНАТИ";
             this.btnConcatenate.UseVisualStyleBackColor = true;
             this.btnConcatenate.Click += new System.EventHandler(this.btnConcatenate_Click);
             // 
@@ -190,7 +190,7 @@
             // 
             this.btnBrowseInput2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnBrowseInput2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBrowseInput2.Image = global::Kursach.Properties.Resources.icons8_opened_folder_50;
+            this.btnBrowseInput2.Image = global::ClipLab.Properties.Resources.icons8_opened_folder_50;
             this.btnBrowseInput2.Location = new System.Drawing.Point(505, 113);
             this.btnBrowseInput2.Name = "btnBrowseInput2";
             this.btnBrowseInput2.Size = new System.Drawing.Size(83, 47);
@@ -202,7 +202,7 @@
             // 
             this.btnBrowseInput1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnBrowseInput1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBrowseInput1.Image = global::Kursach.Properties.Resources.icons8_opened_folder_50;
+            this.btnBrowseInput1.Image = global::ClipLab.Properties.Resources.icons8_opened_folder_50;
             this.btnBrowseInput1.Location = new System.Drawing.Point(505, 46);
             this.btnBrowseInput1.Name = "btnBrowseInput1";
             this.btnBrowseInput1.Size = new System.Drawing.Size(83, 45);
@@ -225,7 +225,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(792, 422);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "MP4 в MP3";
+            this.tabPage2.Text = "MP4 у MP3";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // btnConvert
@@ -237,7 +237,7 @@
             this.btnConvert.Name = "btnConvert";
             this.btnConvert.Size = new System.Drawing.Size(511, 61);
             this.btnConvert.TabIndex = 6;
-            this.btnConvert.Text = "ОБРАБОТАТЬ";
+            this.btnConvert.Text = "ОБРОБИТИ";
             this.btnConvert.UseVisualStyleBackColor = true;
             this.btnConvert.Click += new System.EventHandler(this.btnConvert_Click);
             // 
@@ -245,7 +245,7 @@
             // 
             this.btnSaveAudio.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSaveAudio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaveAudio.Image = global::Kursach.Properties.Resources.icons8_opened_folder_50;
+            this.btnSaveAudio.Image = global::ClipLab.Properties.Resources.icons8_opened_folder_50;
             this.btnSaveAudio.Location = new System.Drawing.Point(576, 174);
             this.btnSaveAudio.Name = "btnSaveAudio";
             this.btnSaveAudio.Size = new System.Drawing.Size(75, 69);
@@ -257,7 +257,7 @@
             // 
             this.btnOpenVideo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnOpenVideo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOpenVideo.Image = global::Kursach.Properties.Resources.icons8_opened_folder_50;
+            this.btnOpenVideo.Image = global::ClipLab.Properties.Resources.icons8_opened_folder_50;
             this.btnOpenVideo.Location = new System.Drawing.Point(576, 83);
             this.btnOpenVideo.Name = "btnOpenVideo";
             this.btnOpenVideo.Size = new System.Drawing.Size(75, 62);
@@ -272,9 +272,9 @@
             this.lbl2tab2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl2tab2.Location = new System.Drawing.Point(140, 174);
             this.lbl2tab2.Name = "lbl2tab2";
-            this.lbl2tab2.Size = new System.Drawing.Size(204, 25);
+            this.lbl2tab2.Size = new System.Drawing.Size(213, 25);
             this.lbl2tab2.TabIndex = 3;
-            this.lbl2tab2.Text = "Путь сохранения MP3";
+            this.lbl2tab2.Text = "Шлях збереження MP3";
             // 
             // lbl1tab2
             // 
@@ -283,9 +283,9 @@
             this.lbl1tab2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl1tab2.Location = new System.Drawing.Point(140, 83);
             this.lbl1tab2.Name = "lbl1tab2";
-            this.lbl1tab2.Size = new System.Drawing.Size(284, 25);
+            this.lbl1tab2.Size = new System.Drawing.Size(262, 25);
             this.lbl1tab2.TabIndex = 2;
-            this.lbl1tab2.Text = "Вставьте видео в формате MP4";
+            this.lbl1tab2.Text = "Вставте відео у форматі MP4";
             // 
             // txtSaveVideo
             // 
@@ -323,7 +323,7 @@
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(792, 422);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Клип";
+            this.tabPage3.Text = "Кліп";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // lblTab3Time
@@ -333,9 +333,9 @@
             this.lblTab3Time.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTab3Time.Location = new System.Drawing.Point(177, 207);
             this.lblTab3Time.Name = "lblTab3Time";
-            this.lblTab3Time.Size = new System.Drawing.Size(142, 25);
+            this.lblTab3Time.Size = new System.Drawing.Size(140, 25);
             this.lblTab3Time.TabIndex = 10;
-            this.lblTab3Time.Text = "таймкоды (сек)";
+            this.lblTab3Time.Text = "таймкоди (сек)";
             // 
             // lblTab3Save
             // 
@@ -344,9 +344,9 @@
             this.lblTab3Save.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTab3Save.Location = new System.Drawing.Point(170, 144);
             this.lblTab3Save.Name = "lblTab3Save";
-            this.lblTab3Save.Size = new System.Drawing.Size(219, 25);
+            this.lblTab3Save.Size = new System.Drawing.Size(222, 25);
             this.lblTab3Save.TabIndex = 9;
-            this.lblTab3Save.Text = "Путь сохранения Клипа";
+            this.lblTab3Save.Text = "Шлях збереження Кліпа";
             // 
             // lblTab3
             // 
@@ -355,9 +355,9 @@
             this.lblTab3.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTab3.Location = new System.Drawing.Point(170, 58);
             this.lblTab3.Name = "lblTab3";
-            this.lblTab3.Size = new System.Drawing.Size(284, 25);
+            this.lblTab3.Size = new System.Drawing.Size(262, 25);
             this.lblTab3.TabIndex = 8;
-            this.lblTab3.Text = "Вставьте видео в формате MP4";
+            this.lblTab3.Text = "Вставте відео у форматі MP4";
             // 
             // lblTire
             // 
@@ -382,7 +382,7 @@
             // 
             this.btnTab3Input.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnTab3Input.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTab3Input.Image = global::Kursach.Properties.Resources.icons8_opened_folder_50;
+            this.btnTab3Input.Image = global::ClipLab.Properties.Resources.icons8_opened_folder_50;
             this.btnTab3Input.Location = new System.Drawing.Point(469, 70);
             this.btnTab3Input.Name = "btnTab3Input";
             this.btnTab3Input.Size = new System.Drawing.Size(76, 59);
@@ -403,7 +403,7 @@
             // 
             this.btnTab3Output.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnTab3Output.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTab3Output.Image = global::Kursach.Properties.Resources.icons8_opened_folder_50;
+            this.btnTab3Output.Image = global::ClipLab.Properties.Resources.icons8_opened_folder_50;
             this.btnTab3Output.Location = new System.Drawing.Point(469, 144);
             this.btnTab3Output.Name = "btnTab3Output";
             this.btnTab3Output.Size = new System.Drawing.Size(77, 57);
@@ -419,7 +419,7 @@
             this.btnTrim.Name = "btnTrim";
             this.btnTrim.Size = new System.Drawing.Size(369, 48);
             this.btnTrim.TabIndex = 2;
-            this.btnTrim.Text = "СДЕЛАТЬ КЛИП";
+            this.btnTrim.Text = "ЗРОБИТИ КЛІП";
             this.btnTrim.UseVisualStyleBackColor = true;
             this.btnTrim.Click += new System.EventHandler(this.btnTrim_Click);
             // 
@@ -448,7 +448,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tabControl1);
             this.Name = "FormEdit";
-            this.Text = "РЕДАКТИРОВАТЬ";
+            this.Text = "РЕДАКТУВАТИ";
             this.Load += new System.EventHandler(this.FormEdit_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

@@ -1,4 +1,4 @@
-﻿namespace Kursach.Notifications
+﻿namespace ClipLab.Notifications
 {
     partial class AlertBox
     {
@@ -34,7 +34,7 @@
             this.lblTextAlertBox = new System.Windows.Forms.Label();
             this.LinAlertBox = new System.Windows.Forms.Panel();
             this.timerAnimation = new System.Windows.Forms.Timer(this.components);
-            this.ellipse = new Kursach.EllipseControl();
+            this.ellipse = new ClipLab.EllipseControl();
             this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picAlertBox)).BeginInit();
             this.SuspendLayout();
