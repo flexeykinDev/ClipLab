@@ -45,11 +45,10 @@ namespace ClipLab.Forms
         private void btnGithub_Click(object sender, EventArgs e)
         {
 
-            Process process = new Process();
-            process.StartInfo.UseShellExecute = true;
-            process.StartInfo.FileName = "chrome";
-            process.StartInfo.Arguments = "https://github.com/booby1545/ClipLab";
-            process.Start();
+            Process browserProcess = new Process();
+            browserProcess.StartInfo.UseShellExecute = true;
+            browserProcess.StartInfo.FileName = "https://github.com/booby1545/ClipLab";
+            browserProcess.Start();
 
 
         }

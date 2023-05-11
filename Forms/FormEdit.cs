@@ -162,10 +162,6 @@ namespace ClipLab.Forms
                     string ffmpegPath = Path.Combine(Application.StartupPath, "ffmpeg.exe");
 
 
-
-
-
-
                     // Шлях до першого відеофайлу
                     string input1 = @$"{inputFile1}";
 
@@ -196,16 +192,16 @@ namespace ClipLab.Forms
                     }
                     else if (!File.Exists(output))
                     {
-                        // Запускаем процесс
+                        // Запускаємо процес
                         Process process = new Process();
                         process.StartInfo = processStartInfo;
                         process.Start();
 
-                        // Ожидаем завершения процесса и получаем вывод команды FFmpeg
+                        // Очікуємо завершення процесу й отримуємо висновок команди FFmpeg
                         string outputMessage = process.StandardOutput.ReadToEnd();
                         process.WaitForExit();
 
-                        // Удаляем временный файл списка входных файлов
+                        // Видаляємо тимчасовий файл списку вхідних файлів
                         File.Delete(listFile);
 
                         System.Media.SystemSounds.Asterisk.Play();
