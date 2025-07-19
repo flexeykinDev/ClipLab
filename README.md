@@ -74,4 +74,4 @@ git clone https://github.com/booby1545/ClipLab.git
 
 Clip Lab поширюється під ліцензією Apache License 2.0. Детальну інформацію про ліцензію можна знайти у файлі [LICENSE](https://github.com/booby1545/ClipLab/blob/main/LICENSE).
 
-Apache License 2.0 © [booby1545](https://github.com/flexeykinDev) 2025. Цей проект може бути використаний у комерційних і некомерційних цілях. Детальну інформацію про ліцензію можна знайти у файлі [LICENSE](https://github.com/flexeykinDev/ClipLab/blob/main/LICENSE).
+Apache License 2.0 © [flexeykinDev](https://github.com/flexeykinDev) 2025. Цей проект може бути використаний у комерційних і некомерційних цілях. Детальну інформацію про ліцензію можна знайти у файлі [LICENSE](https://github.com/flexeykinDev/ClipLab/blob/main/LICENSE).
